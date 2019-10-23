@@ -1,0 +1,31 @@
+<div class="col-md-6">
+  <h2> Listado Inicial</h2>
+  
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="hidden">Id</th>
+      <th>userName</th>
+      <th>nombre</th>
+      <th>password</th>
+      <th>genero</th>
+      <th>edad</th>
+      <th>descripcion</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let usuario of listainicial">
+      <td class="hidden">{{usuario.id}}</td>
+      <td>{{usuario.username}}</td>
+      <td>{{usuario.nombre}}</td>
+      <td>{{usuario.password}}</td>
+      <td>{{usuario.genero}}</td>
+      <td>{{usuario.edad}}</td>
+      <td>{{usuario.descripcion}}</td>
+    
+    </tr>
+    </tbody>
+  </table>
+  </div>
+

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Usuario } from 'src/app/model/usuario';
-import { UsuarioServiceService } from 'src/app/services/usuario-service.service';
+import { altaService } from 'src/app/services/altaService';
 import { Router } from '@angular/router';
 
 @Component({
@@ -12,7 +12,7 @@ export class AltaUsuarioComponent implements OnInit {
 
   usuario: Usuario = new Usuario();
 
-  constructor(private router: Router, private userService: UsuarioServiceService) { }
+  constructor(private router: Router, private userService: altaService) { }
 
   altaUsuario(): void {
     this.userService.altaUsuario(this.usuario)

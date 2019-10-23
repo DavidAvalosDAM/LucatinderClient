@@ -10,7 +10,7 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class UsuarioServiceService {
+export class altaService {
 
   constructor(private http:HttpClient) {}
 
@@ -19,7 +19,4 @@ export class UsuarioServiceService {
   public altaUsuario(Usuario) {
     return this.http.post<Usuario>(this.urlUsuario, Usuario);
   }
-
-
-
 }
