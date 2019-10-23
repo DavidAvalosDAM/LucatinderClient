@@ -1,0 +1,36 @@
+<div class="col-md-6">
+        <h2 class="text-center">Alta Usuario</h2>
+      <form>
+        <div class="form-group">
+          <label for="userName">User name:</label>
+          <input type="text" [(ngModel)]="usuario.userName" placeholder="userName" name="userName" class="form-control" id="userName">
+        </div>
+      
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input [(ngModel)]="usuario.nombre" placeholder="nombre" name="nombre" class="form-control" id="nombre">
+        </div>
+      
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input [(ngModel)]="usuario.password" placeholder="password" name="password" class="form-control" id="password">
+        </div>
+
+        <div class="form-group">
+            <label for="genero">Genero:</label>
+            <input [(ngModel)]="usuario.genero" placeholder="genero" name="genero" class="form-control" id="genero">
+        </div>
+
+        <div class="form-group">
+            <label for="edad">Edad:</label>
+            <input [(ngModel)]="usuario.edad" placeholder="edad" name="edad" class="form-control" id="edad">
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion">Descripcion:</label>
+            <input [(ngModel)]="usuario.descripcion" placeholder="descripcion" name="descripcion" class="form-control" id="descripcion">
+        </div>
+      
+        <button class="btn btn-success" (click)="altaUsuario()">Darse de alta</button>
+      </form>
+      </div>      
