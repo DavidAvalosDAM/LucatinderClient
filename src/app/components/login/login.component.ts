@@ -20,22 +20,23 @@ export class LoginComponent implements OnInit {
   }
 
 
-  logIn(username: string, password: string, event: Event) {
+  getLogin(username: string, password: string, event: Event) {
       this.usuario.username = username;
       this.usuario.password = password;
       this.loginService.getLogin(this.usuario).subscribe(
-        res => {console.log(res);},
-        error => {console.error(error);},
-        () => this.navigate()
+        res => this.navigate,
+        error => this.navigateLogin,
     );
 
   }
 
   navigate() {
-    this.router.navigateByUrl('/index');
+    this.router.navigateByUrl('/rutas');
   }
 
-
+  navigateLogin() {
+    this.router.navigateByUrl('/login');
+  }
 
 
 
