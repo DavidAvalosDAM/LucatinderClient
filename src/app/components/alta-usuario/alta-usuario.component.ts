@@ -10,12 +10,14 @@ import { Router } from '@angular/router';
 })
 export class AltaUsuarioComponent implements OnInit {
 
-  usuario: Usuario = new Usuario();
+  usuario: Usuario;
 
-  constructor(private router: Router, private userService: altaService) { }
+  constructor(private router: Router, private altaService: altaService) { 
+    this.usuario = new Usuario();
+  }
 
   altaUsuario(): void {
-    this.userService.altaUsuario(this.usuario)
+    this.altaService.altaUsuario(this.usuario)
         .subscribe( data => {
           alert("Usuario generado de forma correcta.");
         });
