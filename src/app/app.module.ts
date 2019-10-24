@@ -12,7 +12,7 @@ import {altaService} from '../app/services/altaService';
 import {ContactarService} from '../app/services/contactar.service';
 import {ListadoInicialService} from '../app/services/listado-inicial.service';
 import {MisDatosServiceService} from '../app/services/mis-datos-service.service';
-import { RutasComponent } from './rutas/rutas.component';
+import { RutasComponent } from './components/rutas/rutas.component';
 
 
 
