@@ -18,8 +18,8 @@ export class AltaUsuarioComponent implements OnInit {
 
   altaUsuario(): void {
     this.altaService.altaUsuario(this.usuario)
-        .subscribe( data => {
-          alert("Usuario generado de forma correcta.");
+      .subscribe( data => {
+      alert("Usuario generado de forma correcta.");
         });
   };
 

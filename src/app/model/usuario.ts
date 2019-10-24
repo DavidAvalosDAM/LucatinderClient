@@ -1,6 +1,6 @@
 export class Usuario {
     idUsuario:Number;
-    userName:String;
+    username:String;
     nombre:String;
     password:String;
     genero:String;

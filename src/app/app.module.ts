@@ -7,6 +7,7 @@ import { ListaInicialComponent } from './components/lista-inicial/lista-inicial.
 import { AltaUsuarioComponent } from './components/alta-usuario/alta-usuario.component';
 import { FormsModule } from '@angular/forms';
 import { MisDatosComponent } from './components/mis-datos/mis-datos.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -15,7 +16,8 @@ import { MisDatosComponent } from './components/mis-datos/mis-datos.component';
     AppComponent,
     ListaInicialComponent,
     AltaUsuarioComponent,
-    MisDatosComponent
+    MisDatosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
