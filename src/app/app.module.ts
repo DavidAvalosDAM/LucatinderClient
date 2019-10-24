@@ -8,6 +8,11 @@ import { AltaUsuarioComponent } from './components/alta-usuario/alta-usuario.com
 import { FormsModule } from '@angular/forms';
 import { MisDatosComponent } from './components/mis-datos/mis-datos.component';
 
+import {altaService} from '../app/services/altaService';
+import {ContactarService} from '../app/services/contactar.service';
+import {ListadoInicialService} from '../app/services/listado-inicial.service';
+import {MisDatosServiceService} from '../app/services/mis-datos-service.service';
+
 
 
 @NgModule({
@@ -24,7 +29,11 @@ import { MisDatosComponent } from './components/mis-datos/mis-datos.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [altaService,
+    ContactarService,
+    ListadoInicialService,
+    MisDatosServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
