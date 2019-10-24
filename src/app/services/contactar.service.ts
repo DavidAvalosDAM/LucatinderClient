@@ -1,28 +1,22 @@
 import { Injectable } from '@angular/core';
-
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Usuario } from '../model/usuario';
+
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class ListadoInicialService  {
+export class ContactarService {
 
-  usuario: Usuario;
+  constructor(private http:HttpClient) { }  
 
-  constructor(private http:HttpClient) { ;
-  }
-  
-  private urlUsuario = 'http://localhost:8080/restListadoInicial';
+  private urlUsuario = 'http://localhost:8080/restContactar';
 
-  public getListadoInicial() {
-    return this.http.post<Usuario[]>(this.urlUsuario, Usuario);
-  }
-
-  
+    public getContactar(usuario:Usuario){
+      return this.http.get<Usuario> (this.urlUsuario);
+    }
 }

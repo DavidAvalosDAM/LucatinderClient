@@ -14,7 +14,7 @@ export class altaService {
 
   constructor(private http:HttpClient) {}
 
-  private urlUsuario = 'http://localhost:8080/restUsuario';
+  private urlUsuario = 'http://localhost:8080/restAlta';
 
   public altaUsuario(Usuario) {
     return this.http.post<Usuario>(this.urlUsuario, Usuario);
