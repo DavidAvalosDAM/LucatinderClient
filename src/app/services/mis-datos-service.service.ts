@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Usuario } from '../model/usuario';
 
@@ -11,18 +10,11 @@ const httpOptions = {
 @Injectable({
   providedIn: 'root'
 })
-export class ListadoInicialService  {
+export class MisDatosServiceService {
 
-  usuario: Usuario;
-
-  constructor(private http:HttpClient) { ;
+  private urlUsuario = 'http://localhost:8080/restMisDatos';
+  constructor(private http:HttpClient) { }
+  public getMisdatos(usuario:Usuario){
+    return this.http.get<Usuario> (this.urlUsuario + "/"+usuario.idUsuario);
   }
-  
-  private urlUsuario = 'http://localhost:8080/restListadoInicial';
-
-  public getListadoInicial() {
-    return this.http.post<Usuario[]>(this.urlUsuario, Usuario);
-  }
-
-  
 }

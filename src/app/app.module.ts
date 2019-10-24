@@ -15,7 +15,8 @@ import { MisDatosComponent } from './components/mis-datos/mis-datos.component';
     AppComponent,
     ListaInicialComponent,
     AltaUsuarioComponent,
-    MisDatosComponent
+    MisDatosComponent,
+   
   ],
   imports: [
     BrowserModule,

@@ -15,8 +15,9 @@ export class ListaInicialComponent implements OnInit {
   constructor(private _router: Router, private listadoInicialService:ListadoInicialService) { }
 
   ngOnInit() {
-    this.listadoInicialService.getListadoInicial()
+    this.listadoInicialService.getListadoInicial ()
       .subscribe( data => {
+        console.log(data);
         this.listainicial= data;
       });
   };

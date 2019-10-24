@@ -1,1 +1,17 @@
-<p>mis-datos works!</p>
+<div class="container">
+        <h3 class="text-danger">Mis Datos de Usuario</h3>
+        <small class="text-muted">Este componente muestra los datos del usuarioseleccionado</small>
+       
+      
+        <div id="misDatos">
+            <h5>Nombre: <span class="text-success">{{usuario.nombre}}</span></h5>
+            <h5>Password: <span class="text-success">{{usuario.password}}</span></h5>  
+            <h5>Genero: <span class="text-success">{{usuario.genero}</span></h5>   
+            <h5>Descripcion: <span class="text-success">{{usuario.descripcion}</span></h5>          
+        </div>
+        
+      
+        <div style="text-align: right;">
+            <a routerLink="/products" class="text-muted" style="text-decoration: none;"></a>
+        </div>
+      </div>
